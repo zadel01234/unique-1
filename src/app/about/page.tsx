@@ -18,16 +18,16 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "1998", title: "Founded", desc: "Started as a small tractor parts shop in Ikeja, Lagos" },
-  { year: "2005", title: "Expansion", desc: "Opened our first large warehouse and expanded product range to 5,000+ parts" },
-  { year: "2012", title: "Nationwide", desc: "Established delivery partnerships to reach all 36 Nigerian states" },
-  { year: "2020", title: "Online", desc: "Launched digital catalog to serve customers more efficiently" },
-  { year: "2024", title: "15,000+", desc: "Now stocking over 15,000 parts with 5,000+ satisfied customers" },
+  { year: "2018", title: "Founded", desc: "Started as a small tractor parts shop in Ibadan, Oyo State" },
+  { year: "2020", title: "Expansion", desc: "Opened our first large warehouse and expanded product range to 1,000+ parts" },
+  { year: "2022", title: "Nationwide", desc: "Established delivery partnerships to reach 10 Nigerian states" },
+  { year: "2024", title: "Online", desc: "Launched digital catalog to serve customers more efficiently" },
+  { year: "2025", title: "5,000+", desc: "Now stocking over 5,000 parts with 1,000+ satisfied customers" },
 ];
 
 const team = [
-  { name: "Biodun Adeleke", role: "Founder & CEO", exp: "30+ years in agricultural machinery" },
-  { name: "Chidi Nwosu", role: "Technical Director", exp: "John Deere certified technician" },
+  { name: "Erioluwa", role: "CoFounder & CEO", exp: "30+ years in agricultural machinery" },
+  { name: "Emmanuel", role: "CoFounder & COO", exp: "John Deere certified technician" },
   { name: "Amaka Okafor", role: "Head of Logistics", exp: "Expert in nationwide parts delivery" },
   { name: "Ibrahim Bello", role: "Parts Specialist", exp: "Specialist in Massey Ferguson & New Holland" },
 ];
@@ -52,10 +52,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: Package, value: "15,000+", label: "Parts in Stock" },
-              { icon: Users, value: "5,000+", label: "Happy Customers" },
-              { icon: Globe, value: "36", label: "States Covered" },
-              { icon: Award, value: "25+", label: "Years Experience" },
+              { icon: Package, value: "5,000+", label: "Parts in Stock" },
+              { icon: Users, value: "1,000+", label: "Happy Customers" },
+              { icon: Globe, value: "10", label: "States Covered" },
+              { icon: Award, value: "8+", label: "Years Experience" },
             ].map((stat) => (
               <div key={stat.label} className="text-center p-6 bg-neutral-50 rounded-2xl">
                 <stat.icon size={32} className="text-primary mx-auto mb-3" />
@@ -76,12 +76,12 @@ export default function AboutPage() {
               <div className="space-y-4 text-neutral-600 leading-relaxed">
                 <p>
                   Founded in {siteConfig.founded} by agricultural machinery enthusiasts with deep roots in Nigerian farming,
-                  Unique Truth Auto Limited began as a modest parts shop in Ikeja, Lagos. Our founders recognized
+                  Unique Truth Auto Limited began as a modest parts shop in Ibadan, Oyo State. Our founders recognized
                   a critical gap: Nigerian farmers were paying premium prices for parts or waiting weeks for
                   imports that could be sourced locally at fair prices.
                 </p>
                 <p>
-                  Over 25 years, we&apos;ve grown into Nigeria&apos;s most trusted independent distributor of tractor
+                  Over {siteConfig.yearsExperience} years, we&apos;ve grown into Ibadan&apos;s most trusted independent distributor of tractor
                   spare parts. We stock genuine OEM parts and high-quality aftermarket alternatives for
                   John Deere, Massey Ferguson, New Holland, Kubota, Ford, and many other leading brands.
                 </p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   "Genuine and aftermarket parts rigorously quality-tested",
                   "Direct partnerships with leading manufacturers",
                   "Technical support from certified tractor specialists",
-                  "Nationwide delivery to all 36 states",
+                  "Regionwide delivery to 10 states",
                   "Bulk order discounts for dealers and cooperatives",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 loading="lazy"
               />
               <div className="absolute -bottom-6 -left-6 bg-accent text-white rounded-2xl p-4 shadow-lg">
-                <div className="text-3xl font-bold">1998</div>
+                <div className="text-3xl font-bold">2018</div>
                 <div className="text-sm opacity-90">Proudly serving Nigeria</div>
               </div>
             </div>

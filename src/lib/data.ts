@@ -1,4 +1,5 @@
 import { Product, Category, Review } from "@/types";
+import { Settings, Circle, Droplets, Zap, GitMerge, Wheat } from "lucide-react";
 
 export const categories: Category[] = [
   {
@@ -56,6 +57,63 @@ export const categories: Category[] = [
     icon: "🌾",
   },
 ];
+
+// export const categories: Category[] = [
+//   {
+//     id: 1,
+//     name: "Engine Parts",
+//     slug: "engine-parts",
+//     description: "High-performance engine components for all major tractor brands including John Deere, Massey Ferguson, New Holland, and Kubota. From pistons to fuel injectors.",
+//     productCount: 125,
+//     image: "https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=600&q=80",
+//     icon: Settings,
+//   },
+//   {
+//     id: 2,
+//     name: "Tires & Wheels",
+//     slug: "tires-wheels",
+//     description: "Agricultural tires and wheels for optimal traction in Nigerian terrain. Front and rear tractor tires, rims, and accessories.",
+//     productCount: 80,
+//     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+//     icon: Circle,
+//   },
+//   {
+//     id: 3,
+//     name: "Hydraulics",
+//     slug: "hydraulics",
+//     description: "Complete hydraulic systems, pumps, cylinders, hoses, and control valves for agricultural machinery and tractors.",
+//     productCount: 65,
+//     image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
+//     icon: Droplets,
+//   },
+//   {
+//     id: 4,
+//     name: "Electrical",
+//     slug: "electrical",
+//     description: "Alternators, starters, batteries, wiring harnesses, and electronic control modules for modern and classic tractors.",
+//     productCount: 90,
+//     image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&q=80",
+//     icon: Zap,
+//   },
+//   {
+//     id: 5,
+//     name: "Hydraulic Systems",
+//     slug: "hydraulic-systems",
+//     description: "Complete hydraulic lift assemblies, 3-point hitch components, and power steering systems.",
+//     productCount: 45,
+//     image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
+//     icon: GitMerge,
+//   },
+//   {
+//     id: 6,
+//     name: "Implements",
+//     slug: "implements",
+//     description: "Ploughs, disc harrows, cultivators, seeders, and other agricultural implements for Nigerian farming operations.",
+//     productCount: 55,
+//     image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80",
+//     icon: Wheat,
+//   },
+// ];
 
 export const products: Product[] = [
   {
@@ -301,6 +359,10 @@ const fbUrl       = process.env.NEXT_PUBLIC_FACEBOOK_URL || "";
 const twitterUrl  = process.env.NEXT_PUBLIC_TWITTER_URL  || "";
 const igUrl       = process.env.NEXT_PUBLIC_INSTAGRAM_URL || "";
 
+
+const founded = "2018";
+
+
 // Logo / favicon images (optional – falls back to emoji 🚜 if not supplied)
 export const siteImages = {
   /** Local path like "/images/logo.png" or a full URL. Falls back to emoji. */
@@ -324,12 +386,12 @@ export const siteConfig = {
   whatsapp,
   email,
   hours,
-  founded: "1998",
-  yearsExperience: 25,
+  founded,
+  yearsExperience: new Date().getFullYear() - parseInt(founded),
   stats: {
-    partsInStock: "15,000+",
-    satisfiedCustomers: "5,000+",
-    statesCovered: "36",
+    partsInStock: "5,000+",
+    satisfiedCustomers: "1,000+",
+    statesCovered: "10",
   },
   socialMedia: {
     facebook:  fbUrl,

@@ -64,7 +64,8 @@ export default function Navbar() {
       {/* ── Top announcement bar ──────────────────────────────────── */}
       <div className="bg-primary-600 text-white text-xs py-1.5 px-4 hidden md:block">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <span>🚚 Fast Nationwide Delivery • Same-day dispatch for Lagos orders</span>
+          {/* <span>🚚 Fast Nationwide Delivery • Same-day dispatch for Lagos orders</span> */}
+          <div />
           <div className="flex items-center gap-4">
             {siteConfig.phone && siteConfig.phone !== "—" && (
               <a
@@ -93,7 +94,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
               <div className="w-10 h-10 rounded-full overflow-hidden bg-primary group-hover:bg-accent transition-colors flex items-center justify-center text-white">
-                  /* eslint-disable-next-line @next/next/no-img-element */
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/logo.avif"
                     alt="Unique Truth Auto Limited logo"

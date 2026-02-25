@@ -6,8 +6,8 @@ const highlights = [
   "Genuine and aftermarket parts available",
   "Technical support for all products",
   "Bulk order discounts available",
-  "Nationwide delivery to all 36 states",
-  "25+ years of industry experience",
+  "Regionwide delivery to 10 states",
+  "8+ years of industry experience",
 ];
 
 export default function AboutSection() {

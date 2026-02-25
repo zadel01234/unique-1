@@ -22,7 +22,7 @@ export default function CTASection() {
           Can&apos;t Find the Part You Need?
         </h2>
         <p className="text-xl text-white/80 mb-8 leading-relaxed">
-          Our tractor parts experts are ready to help. With 15,000+ parts in stock and direct
+          Our tractor parts experts are ready to help. With 5,000+ parts in stock and direct
           supplier relationships, we can source any part you need.
         </p>
 

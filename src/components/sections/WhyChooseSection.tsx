@@ -1,4 +1,5 @@
 import { ShieldCheck, Truck, DollarSign, HeadphonesIcon } from "lucide-react";
+import { siteConfig} from "@/lib/data";
 
 const reasons = [
   {
@@ -9,7 +10,7 @@ const reasons = [
   {
     icon: Truck,
     title: "Fast Delivery",
-    description: "Same-day dispatch for Lagos orders, nationwide delivery within 3-5 working days anywhere in Nigeria.",
+    description: "Same-day dispatch for Oyo state orders, regionwide delivery within 3-5 working days anywhere.",
   },
   {
     icon: DollarSign,
@@ -30,7 +31,7 @@ export default function WhyChooseSection() {
         <div className="text-center mb-14">
           <h2 className="section-title">Why Choose Unique Truth Auto Limited?</h2>
           <p className="section-subtitle mx-auto text-center">
-            Over 25 years of serving Nigerian farmers with quality tractor parts and unmatched service
+            Over {siteConfig.yearsExperience} years of serving Nigerian farmers with quality tractor parts and unmatched service
           </p>
         </div>
 

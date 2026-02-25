@@ -7,6 +7,8 @@ import { useProducts, useCategories } from "@/hooks/useProducts";
 import ProductCard from "@/components/ui/ProductCard";
 import { cn } from "@/lib/utils";
 import { categories } from "@/lib/data";
+import { Settings, Circle, Droplets, Zap, GitMerge, Wheat } from "lucide-react";
+
 
 export default function CategoryPage() {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>();
@@ -132,7 +134,8 @@ export default function CategoryPage() {
           {/* Products grid */}
           <div className="flex-1">
             {/* Mobile category filter */}
-            <div className="lg:hidden flex gap-2 mb-6 overflow-x-auto pb-2">
+            <div className="lg:hidden flex flex-wrap gap-2 mb-6">
+            {/* <div className="lg:hidden flex gap-2 mb-6 overflow-x-auto pb-2"> */}
               <button
                 onClick={() => setSelectedCategory(undefined)}
                 className={cn(
@@ -159,12 +162,14 @@ export default function CategoryPage() {
             </div>
 
             {isLoading ? (
+              // <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[...Array(6)].map((_, i) => (
                   <div key={i} className="bg-neutral-100 rounded-2xl h-72 animate-pulse" />
                 ))}
               </div>
             ) : sortedProducts && sortedProducts.length > 0 ? (
+              // <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                 {sortedProducts.map((product) => (
                   <ProductCard key={product.id} product={product} />
