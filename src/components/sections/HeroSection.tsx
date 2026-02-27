@@ -131,7 +131,7 @@ import { siteConfig, siteImages } from "@/lib/data";
 import { trackEvent } from "@/components/GoogleAnalytics";
 
 const trustBadges = [
-  { icon: Truck, label: "Send a message to order now", desc: "3-5 days anywhere in our Region" },
+  { icon: Truck, label: "Send a message to order now", desc: "3-5 days anywhere in Nigeria" },
   { icon: ShieldCheck, label: "Genuine Parts Guarantee", desc: "100% authentic OEM & aftermarket" },
   { icon: Headphones, label: "Support available", desc: "Tractor specialists on call" },
 ];
@@ -160,7 +160,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm mb-6">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            Ibadan&apos;s #1 Tractor Parts Distributor Since {siteConfig.founded}
+            Nigeria&apos;s #1 Tractor Parts Distributor Since {siteConfig.founded}
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">

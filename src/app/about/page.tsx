@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const milestones = [
   { year: "2018", title: "Founded", desc: "Started as a small tractor parts shop in Ibadan, Oyo State" },
   { year: "2020", title: "Expansion", desc: "Opened our first large warehouse and expanded product range to 1,000+ parts" },
-  { year: "2022", title: "Nationwide", desc: "Established delivery partnerships to reach 10 Nigerian states" },
+  { year: "2022", title: "Nationwide", desc: "Established delivery partnerships to reach all 36 states" },
   { year: "2024", title: "Online", desc: "Launched digital catalog to serve customers more efficiently" },
   { year: "2025", title: "5,000+", desc: "Now stocking over 5,000 parts with 1,000+ satisfied customers" },
 ];
@@ -81,7 +81,7 @@ export default function AboutPage() {
                   imports that could be sourced locally at fair prices.
                 </p>
                 <p>
-                  Over {siteConfig.yearsExperience} years, we&apos;ve grown into Ibadan&apos;s most trusted independent distributor of tractor
+                  Over {siteConfig.yearsExperience} years, we&apos;ve grown into Oyo State&apos;s most trusted independent distributor of tractor
                   spare parts. We stock genuine OEM parts and high-quality aftermarket alternatives for
                   John Deere, Massey Ferguson, New Holland, Kubota, Ford, and many other leading brands.
                 </p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   "Genuine and aftermarket parts rigorously quality-tested",
                   "Direct partnerships with leading manufacturers",
                   "Technical support from certified tractor specialists",
-                  "Regionwide delivery to 10 states",
+                  "Nationwide delivery to 36 states",
                   "Bulk order discounts for dealers and cooperatives",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">

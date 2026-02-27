@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Truck,
     title: "Fast Delivery",
-    description: "Same-day dispatch for Oyo state orders, regionwide delivery within 3-5 working days anywhere.",
+    description: "Same-day dispatch for Oyo state orders, Nationwide delivery within 3-5 working days anywhere.",
   },
   {
     icon: DollarSign,

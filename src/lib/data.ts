@@ -1677,7 +1677,7 @@ export const siteConfig = {
   stats: {
     partsInStock: "5,000+",
     satisfiedCustomers: "1,000+",
-    statesCovered: "10",
+    statesCovered: "36",
   },
   socialMedia: {
     facebook:  fbUrl,
