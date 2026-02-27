@@ -125,7 +125,7 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-white">
+      <section className="hidden md:block py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-heading font-bold text-primary text-center mb-12">Our Journey</h2>
           <div className="relative">
