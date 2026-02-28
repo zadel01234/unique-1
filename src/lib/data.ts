@@ -1638,7 +1638,7 @@ const phone = process.env.NEXT_PUBLIC_PHONE || "—";
 const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || "";          // e.g. +2348012345678
 const email = process.env.NEXT_PUBLIC_EMAIL || "";
 const address = process.env.NEXT_PUBLIC_ADDRESS || "";
-const hours = process.env.NEXT_PUBLIC_HOURS || "Mon-Fri: 8am – 6pm, Sat: 9am – 4pm";
+const hours = process.env.NEXT_PUBLIC_HOURS || "Mon-Sat: 8am – 6pm";
 
 // Social-media handles (optional – leave blank to hide the icon)
 const fbUrl       = process.env.NEXT_PUBLIC_FACEBOOK_URL || "";
