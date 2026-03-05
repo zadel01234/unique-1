@@ -37,7 +37,7 @@ export default function CategorySection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="p-4">
-                <div className="text-2xl mb-1">{cat.icon}</div>
+                <div className="text-2xl mb-1"></div>
                 <h3 className="font-semibold text-neutral-800 group-hover:text-primary transition-colors text-sm md:text-base">
                   {cat.name}
                 </h3>
