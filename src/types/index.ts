@@ -26,7 +26,8 @@ export interface Category {
   description: string;
   productCount: number;
   image: string;
-  icon?: string;
+  // icon?: string;
+  icon?: React.ComponentType<{ className?: string }>;
 }
 
 export interface Review {
