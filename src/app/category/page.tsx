@@ -11,9 +11,9 @@ import { categories } from "@/lib/data";
 // ── Responsive items-per-page hook ──────────────────────────────────
 function useItemsPerPage() {
   const getCount = useCallback(() => {
-    if (typeof window === "undefined") return 12;
+    if (typeof window === "undefined") return 9;
     const w = window.innerWidth;
-    if (w >= 1024) return 12;  // lg
+    if (w >= 1024) return 9;  // lg
     if (w >= 768) return 8;    // md
     return 6;                  // sm
   }, []);
